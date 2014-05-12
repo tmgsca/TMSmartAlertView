@@ -4,13 +4,12 @@ A simple custom alertView component that uses Xib's to allow users to highly cus
 
 # Usage
 
-######1 - Import "TMSmartAlertView.h" on your view controller. <br/>
-######2 - Instantiate a TMSmartAlertView object as the following example:
+1. Import "TMSmartAlertView.h" on your view controller.
+2. Instantiate a TMSmartAlertView object as the following example.
 
+######Simple one button alertView
 <language Objective-C>
 ```
-//Simple one button alertView
-
 TMSmartAlertView * alertView;
 
 - (void)viewDidLoad
@@ -27,10 +26,9 @@ TMSmartAlertView * alertView;
   [alertView dismiss];
 }
 ```
+######Yes or No alertView
 <language Objective-C>
 ```
-// Yes or No alertView
-
 TMSmartAlertView * alertView;
 
 - (void) viewDidLoad
