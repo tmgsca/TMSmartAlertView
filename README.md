@@ -8,7 +8,7 @@ A simple custom alertView component that uses Xib's to allow users to highly cus
 2. Instantiate a TMSmartAlertView object as the examples below
 
 ######Simple one button alertView
-<language objective-c>
+<language obj-c>
 ```
 TMSmartAlertView * alertView;
 
@@ -27,7 +27,7 @@ TMSmartAlertView * alertView;
 }
 ```
 ######Yes or No alertView
-<language objective-c>
+<language obj-c>
 ```
 TMSmartAlertView * alertView;
 
