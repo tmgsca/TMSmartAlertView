@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF3D4E4719210B61002F1039 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3D4E4619210B61002F1039 /* Foundation.framework */; };
+		AF3D4E4919210B61002F1039 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3D4E4819210B61002F1039 /* CoreGraphics.framework */; };
+		AF3D4E4B19210B61002F1039 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3D4E4A19210B61002F1039 /* UIKit.framework */; };
+		AF3D4E5119210B61002F1039 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF3D4E4F19210B61002F1039 /* InfoPlist.strings */; };
+		AF3D4E5319210B61002F1039 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3D4E5219210B61002F1039 /* main.m */; };
+		AF3D4E5719210B61002F1039 /* TMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3D4E5619210B61002F1039 /* TMAppDelegate.m */; };
+		AF3D4E5A19210B61002F1039 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3D4E5819210B61002F1039 /* Main_iPhone.storyboard */; };
+		AF3D4E6019210B61002F1039 /* TMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3D4E5F19210B61002F1039 /* TMViewController.m */; };
+		AF3D4E6219210B61002F1039 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3D4E6119210B61002F1039 /* Images.xcassets */; };
+		AF3D4E6919210B62002F1039 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3D4E6819210B62002F1039 /* XCTest.framework */; };
+		AF3D4E6A19210B62002F1039 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3D4E4619210B61002F1039 /* Foundation.framework */; };
+		AF3D4E6B19210B62002F1039 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3D4E4A19210B61002F1039 /* UIKit.framework */; };
+		AF3D4E7319210B62002F1039 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF3D4E7119210B62002F1039 /* InfoPlist.strings */; };
+		AF3D4E7519210B62002F1039 /* TMSmartAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3D4E7419210B62002F1039 /* TMSmartAlertViewTests.m */; };
+		AF3D4E7F19210BA0002F1039 /* TMDefaultAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3D4E7E19210BA0002F1039 /* TMDefaultAlertView.xib */; };
+		AF3D4E8219211632002F1039 /* TMSmartAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3D4E8119211632002F1039 /* TMSmartAlertView.m */; };
+		AF3D4E8419213280002F1039 /* TMDefaultOkAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3D4E8319213280002F1039 /* TMDefaultOkAlertView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF3D4E6C19210B62002F1039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF3D4E3B19210B61002F1039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF3D4E4219210B61002F1039;
+			remoteInfo = TMSmartAlertView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF3D4E4319210B61002F1039 /* TMSmartAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMSmartAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3D4E4619210B61002F1039 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF3D4E4819210B61002F1039 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AF3D4E4A19210B61002F1039 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AF3D4E4E19210B61002F1039 /* TMSmartAlertView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMSmartAlertView-Info.plist"; sourceTree = "<group>"; };
+		AF3D4E5019210B61002F1039 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF3D4E5219210B61002F1039 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF3D4E5419210B61002F1039 /* TMSmartAlertView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMSmartAlertView-Prefix.pch"; sourceTree = "<group>"; };
+		AF3D4E5519210B61002F1039 /* TMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAppDelegate.h; sourceTree = "<group>"; };
+		AF3D4E5619210B61002F1039 /* TMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMAppDelegate.m; sourceTree = "<group>"; };
+		AF3D4E5919210B61002F1039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		AF3D4E5E19210B61002F1039 /* TMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMViewController.h; sourceTree = "<group>"; };
+		AF3D4E5F19210B61002F1039 /* TMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMViewController.m; sourceTree = "<group>"; };
+		AF3D4E6119210B61002F1039 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TMSmartAlertView/Images.xcassets; sourceTree = "<group>"; };
+		AF3D4E6719210B62002F1039 /* TMSmartAlertViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMSmartAlertViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3D4E6819210B62002F1039 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF3D4E7019210B62002F1039 /* TMSmartAlertViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMSmartAlertViewTests-Info.plist"; sourceTree = "<group>"; };
+		AF3D4E7219210B62002F1039 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF3D4E7419210B62002F1039 /* TMSmartAlertViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMSmartAlertViewTests.m; sourceTree = "<group>"; };
+		AF3D4E7E19210BA0002F1039 /* TMDefaultAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMDefaultAlertView.xib; sourceTree = "<group>"; };
+		AF3D4E8019211632002F1039 /* TMSmartAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMSmartAlertView.h; sourceTree = "<group>"; };
+		AF3D4E8119211632002F1039 /* TMSmartAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMSmartAlertView.m; sourceTree = "<group>"; };
+		AF3D4E8319213280002F1039 /* TMDefaultOkAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMDefaultOkAlertView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF3D4E4019210B61002F1039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3D4E4919210B61002F1039 /* CoreGraphics.framework in Frameworks */,
+				AF3D4E4B19210B61002F1039 /* UIKit.framework in Frameworks */,
+				AF3D4E4719210B61002F1039 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3D4E6419210B62002F1039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3D4E6919210B62002F1039 /* XCTest.framework in Frameworks */,
+				AF3D4E6B19210B62002F1039 /* UIKit.framework in Frameworks */,
+				AF3D4E6A19210B62002F1039 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF3D4E3A19210B61002F1039 = {
+			isa = PBXGroup;
+			children = (
+				AF3D4E4C19210B61002F1039 /* TMSmartAlertView */,
+				AF3D4E6119210B61002F1039 /* Images.xcassets */,
+				AF3D4E6E19210B62002F1039 /* TMSmartAlertViewTests */,
+				AF3D4E4519210B61002F1039 /* Frameworks */,
+				AF3D4E4419210B61002F1039 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF3D4E4419210B61002F1039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D4E4319210B61002F1039 /* TMSmartAlertView.app */,
+				AF3D4E6719210B62002F1039 /* TMSmartAlertViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF3D4E4519210B61002F1039 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D4E4619210B61002F1039 /* Foundation.framework */,
+				AF3D4E4819210B61002F1039 /* CoreGraphics.framework */,
+				AF3D4E4A19210B61002F1039 /* UIKit.framework */,
+				AF3D4E6819210B62002F1039 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF3D4E4C19210B61002F1039 /* TMSmartAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D4E7E19210BA0002F1039 /* TMDefaultAlertView.xib */,
+				AF3D4E8319213280002F1039 /* TMDefaultOkAlertView.xib */,
+				AF3D4E8019211632002F1039 /* TMSmartAlertView.h */,
+				AF3D4E8119211632002F1039 /* TMSmartAlertView.m */,
+				AFDF425C19214BE400DC0CE1 /* Demo */,
+				AF3D4E4D19210B61002F1039 /* Supporting Files */,
+			);
+			path = TMSmartAlertView;
+			sourceTree = "<group>";
+		};
+		AF3D4E4D19210B61002F1039 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D4E4E19210B61002F1039 /* TMSmartAlertView-Info.plist */,
+				AF3D4E4F19210B61002F1039 /* InfoPlist.strings */,
+				AF3D4E5219210B61002F1039 /* main.m */,
+				AF3D4E5419210B61002F1039 /* TMSmartAlertView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF3D4E6E19210B62002F1039 /* TMSmartAlertViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D4E7419210B62002F1039 /* TMSmartAlertViewTests.m */,
+				AF3D4E6F19210B62002F1039 /* Supporting Files */,
+			);
+			path = TMSmartAlertViewTests;
+			sourceTree = "<group>";
+		};
+		AF3D4E6F19210B62002F1039 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D4E7019210B62002F1039 /* TMSmartAlertViewTests-Info.plist */,
+				AF3D4E7119210B62002F1039 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFDF425C19214BE400DC0CE1 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D4E5819210B61002F1039 /* Main_iPhone.storyboard */,
+				AF3D4E5519210B61002F1039 /* TMAppDelegate.h */,
+				AF3D4E5619210B61002F1039 /* TMAppDelegate.m */,
+				AF3D4E5E19210B61002F1039 /* TMViewController.h */,
+				AF3D4E5F19210B61002F1039 /* TMViewController.m */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF3D4E4219210B61002F1039 /* TMSmartAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF3D4E7819210B62002F1039 /* Build configuration list for PBXNativeTarget "TMSmartAlertView" */;
+			buildPhases = (
+				AF3D4E3F19210B61002F1039 /* Sources */,
+				AF3D4E4019210B61002F1039 /* Frameworks */,
+				AF3D4E4119210B61002F1039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMSmartAlertView;
+			productName = TMSmartAlertView;
+			productReference = AF3D4E4319210B61002F1039 /* TMSmartAlertView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF3D4E6619210B62002F1039 /* TMSmartAlertViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF3D4E7B19210B62002F1039 /* Build configuration list for PBXNativeTarget "TMSmartAlertViewTests" */;
+			buildPhases = (
+				AF3D4E6319210B62002F1039 /* Sources */,
+				AF3D4E6419210B62002F1039 /* Frameworks */,
+				AF3D4E6519210B62002F1039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF3D4E6D19210B62002F1039 /* PBXTargetDependency */,
+			);
+			name = TMSmartAlertViewTests;
+			productName = TMSmartAlertViewTests;
+			productReference = AF3D4E6719210B62002F1039 /* TMSmartAlertViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF3D4E3B19210B61002F1039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = 7Links;
+				TargetAttributes = {
+					AF3D4E6619210B62002F1039 = {
+						TestTargetID = AF3D4E4219210B61002F1039;
+					};
+				};
+			};
+			buildConfigurationList = AF3D4E3E19210B61002F1039 /* Build configuration list for PBXProject "TMSmartAlertView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF3D4E3A19210B61002F1039;
+			productRefGroup = AF3D4E4419210B61002F1039 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF3D4E4219210B61002F1039 /* TMSmartAlertView */,
+				AF3D4E6619210B62002F1039 /* TMSmartAlertViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF3D4E4119210B61002F1039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3D4E7F19210BA0002F1039 /* TMDefaultAlertView.xib in Resources */,
+				AF3D4E6219210B61002F1039 /* Images.xcassets in Resources */,
+				AF3D4E5A19210B61002F1039 /* Main_iPhone.storyboard in Resources */,
+				AF3D4E8419213280002F1039 /* TMDefaultOkAlertView.xib in Resources */,
+				AF3D4E5119210B61002F1039 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3D4E6519210B62002F1039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3D4E7319210B62002F1039 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF3D4E3F19210B61002F1039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3D4E8219211632002F1039 /* TMSmartAlertView.m in Sources */,
+				AF3D4E6019210B61002F1039 /* TMViewController.m in Sources */,
+				AF3D4E5319210B61002F1039 /* main.m in Sources */,
+				AF3D4E5719210B61002F1039 /* TMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3D4E6319210B62002F1039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3D4E7519210B62002F1039 /* TMSmartAlertViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF3D4E6D19210B62002F1039 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF3D4E4219210B61002F1039 /* TMSmartAlertView */;
+			targetProxy = AF3D4E6C19210B62002F1039 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF3D4E4F19210B61002F1039 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF3D4E5019210B61002F1039 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF3D4E5819210B61002F1039 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF3D4E5919210B61002F1039 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		AF3D4E7119210B62002F1039 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF3D4E7219210B62002F1039 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF3D4E7619210B62002F1039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF3D4E7719210B62002F1039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF3D4E7919210B62002F1039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TMSmartAlertView/TMSmartAlertView-Prefix.pch";
+				INFOPLIST_FILE = "TMSmartAlertView/TMSmartAlertView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AF3D4E7A19210B62002F1039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TMSmartAlertView/TMSmartAlertView-Prefix.pch";
+				INFOPLIST_FILE = "TMSmartAlertView/TMSmartAlertView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AF3D4E7C19210B62002F1039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TMSmartAlertView.app/TMSmartAlertView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TMSmartAlertView/TMSmartAlertView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TMSmartAlertViewTests/TMSmartAlertViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AF3D4E7D19210B62002F1039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TMSmartAlertView.app/TMSmartAlertView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TMSmartAlertView/TMSmartAlertView-Prefix.pch";
+				INFOPLIST_FILE = "TMSmartAlertViewTests/TMSmartAlertViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF3D4E3E19210B61002F1039 /* Build configuration list for PBXProject "TMSmartAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3D4E7619210B62002F1039 /* Debug */,
+				AF3D4E7719210B62002F1039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF3D4E7819210B62002F1039 /* Build configuration list for PBXNativeTarget "TMSmartAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3D4E7919210B62002F1039 /* Debug */,
+				AF3D4E7A19210B62002F1039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF3D4E7B19210B62002F1039 /* Build configuration list for PBXNativeTarget "TMSmartAlertViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3D4E7C19210B62002F1039 /* Debug */,
+				AF3D4E7D19210B62002F1039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF3D4E3B19210B61002F1039 /* Project object */;
+}
