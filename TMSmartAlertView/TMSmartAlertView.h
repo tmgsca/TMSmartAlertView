@@ -10,6 +10,13 @@
 
 @interface TMSmartAlertView : UIView
 
+typedef enum {
+    TMSmartAlertViewSubviewTagTitleLabel = 0,
+    TMSmartAlertViewSubviewTagTextLabel = 1,
+    TMSmartAlertViewSubviewTagCancelButton = 2,
+    TMSmartAlertViewSubviewTagYesButton = 3
+} TMSmartAlertViewButtonTag;
+
 @property (strong, nonatomic) NSString * defaultXib;
 @property CGFloat cornerRadius;
 
@@ -20,9 +27,21 @@
 
 - (TMSmartAlertView *) init;
 
-- (TMSmartAlertView *) initWithTitle: (NSString *) title  text: (NSString *) text  cancelButtonTitle: (NSString *) cancelButtonTitle cancelButtonSelector: (SEL) cancelButtonSelector xibName: (NSString *) xibName target: (UIViewController *) target;
+- (TMSmartAlertView *) initWithTitle: (NSString *) title
+                                text: (NSString *) text
+                   cancelButtonTitle: (NSString *) cancelButtonTitle
+                cancelButtonSelector: (SEL) cancelButtonSelector
+                             xibName: (NSString *) xibName
+                              target: (UIViewController *) target;
 
-- (TMSmartAlertView *) initWithTitle: (NSString *) title  text: (NSString *) text  cancelButtonTitle: (NSString *) cancelButtonTitle cancelButtonSelector: (SEL) cancelButtonSelector yesButtonTitle: (NSString *) yesButtonTitle yesButtonSelector: (SEL) yesButtonSelector xibName: (NSString *) xibName target: (UIViewController *) target;
+- (TMSmartAlertView *) initWithTitle: (NSString *) title
+                                text: (NSString *) text
+                   cancelButtonTitle: (NSString *) cancelButtonTitle
+                cancelButtonSelector: (SEL) cancelButtonSelector
+                      yesButtonTitle: (NSString *) yesButtonTitle
+                   yesButtonSelector: (SEL) yesButtonSelector
+                             xibName: (NSString *) xibName
+                              target: (UIViewController *) target;
 
 - (void) initWindow;
 

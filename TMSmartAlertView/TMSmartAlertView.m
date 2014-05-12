@@ -39,7 +39,12 @@ UIView *  modalBackground;
     return self;
 }
 
-- (TMSmartAlertView *) initWithTitle: (NSString *) title  text: (NSString *) text  cancelButtonTitle: (NSString *) cancelButtonTitle cancelButtonSelector: (SEL) cancelButtonSelector xibName: (NSString *) xibName target: (UIViewController *) target
+- (TMSmartAlertView *) initWithTitle: (NSString *) title
+                                text: (NSString *) text
+                   cancelButtonTitle: (NSString *) cancelButtonTitle
+                cancelButtonSelector: (SEL) cancelButtonSelector
+                             xibName: (NSString *) xibName
+                              target: (UIViewController *) target
 {
     if(xibName){
         
@@ -106,7 +111,14 @@ UIView *  modalBackground;
     return self;
 }
 
-- (TMSmartAlertView *) initWithTitle: (NSString *) title  text: (NSString *) text  cancelButtonTitle: (NSString *) cancelButtonTitle cancelButtonSelector: (SEL) cancelButtonSelector yesButtonTitle: (NSString *) yesButtonTitle yesButtonSelector: (SEL) yesButtonSelector xibName: (NSString *) xibName target: (UIViewController *) target
+- (TMSmartAlertView *) initWithTitle: (NSString *) title
+                                text: (NSString *) text
+                   cancelButtonTitle: (NSString *) cancelButtonTitle
+                cancelButtonSelector: (SEL) cancelButtonSelector
+                      yesButtonTitle: (NSString *) yesButtonTitle
+                   yesButtonSelector: (SEL) yesButtonSelector
+                             xibName: (NSString *) xibName
+                              target: (UIViewController *) target
 {
     if(xibName){
         
@@ -132,16 +144,16 @@ UIView *  modalBackground;
     
     for (UIView * subview in [self subviews]) {
         switch (subview.tag) {
-            case 0:
+            case TMSmartAlertViewSubviewTagTitleLabel:
                 self.titleLabel = (UILabel *) subview;
                 break;
-            case 1:
+            case TMSmartAlertViewSubviewTagTextLabel:
                 self.textLabel = (UILabel *) subview;
                 break;
-            case 2:
+            case TMSmartAlertViewSubviewTagCancelButton:
                 self.cancelButton = (UIButton *) subview;
                 break;
-            case 3:
+            case TMSmartAlertViewSubviewTagYesButton:
                 self.yesButton = (UIButton *) subview;
                 break;
             default:
